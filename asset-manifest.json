@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/reenbit-test-app/static/css/main.7acaea2f.css",
-    "main.js": "/reenbit-test-app/static/js/main.721e8181.js",
-    "static/js/415.32f8d7a2.chunk.js": "/reenbit-test-app/static/js/415.32f8d7a2.chunk.js",
+    "main.js": "/reenbit-test-app/static/js/main.f0ca3162.js",
+    "static/js/415.5b91980b.chunk.js": "/reenbit-test-app/static/js/415.5b91980b.chunk.js",
     "static/css/95.c9c575ad.chunk.css": "/reenbit-test-app/static/css/95.c9c575ad.chunk.css",
-    "static/js/95.048295d6.chunk.js": "/reenbit-test-app/static/js/95.048295d6.chunk.js",
+    "static/js/95.e2ce1d64.chunk.js": "/reenbit-test-app/static/js/95.e2ce1d64.chunk.js",
     "static/js/805.5c344b68.chunk.js": "/reenbit-test-app/static/js/805.5c344b68.chunk.js",
+    "static/js/279.b21a6223.chunk.js": "/reenbit-test-app/static/js/279.b21a6223.chunk.js",
     "static/js/128.a4b312b6.chunk.js": "/reenbit-test-app/static/js/128.a4b312b6.chunk.js",
     "index.html": "/reenbit-test-app/index.html",
     "main.7acaea2f.css.map": "/reenbit-test-app/static/css/main.7acaea2f.css.map",
-    "main.721e8181.js.map": "/reenbit-test-app/static/js/main.721e8181.js.map",
-    "415.32f8d7a2.chunk.js.map": "/reenbit-test-app/static/js/415.32f8d7a2.chunk.js.map",
+    "main.f0ca3162.js.map": "/reenbit-test-app/static/js/main.f0ca3162.js.map",
+    "415.5b91980b.chunk.js.map": "/reenbit-test-app/static/js/415.5b91980b.chunk.js.map",
     "95.c9c575ad.chunk.css.map": "/reenbit-test-app/static/css/95.c9c575ad.chunk.css.map",
-    "95.048295d6.chunk.js.map": "/reenbit-test-app/static/js/95.048295d6.chunk.js.map",
+    "95.e2ce1d64.chunk.js.map": "/reenbit-test-app/static/js/95.e2ce1d64.chunk.js.map",
     "805.5c344b68.chunk.js.map": "/reenbit-test-app/static/js/805.5c344b68.chunk.js.map",
+    "279.b21a6223.chunk.js.map": "/reenbit-test-app/static/js/279.b21a6223.chunk.js.map",
     "128.a4b312b6.chunk.js.map": "/reenbit-test-app/static/js/128.a4b312b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.721e8181.js"
+    "static/js/main.f0ca3162.js"
   ]
 }
