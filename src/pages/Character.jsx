@@ -1,16 +1,17 @@
 import { BackLink } from "components/BackLink/Backlink";
-import { useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
-import { getOneCharacterId } from "servises/Fetch";
+// import { useEffect } from "react";
+import { useLocation, } from "react-router-dom";
+// import { getOneCharacterId } from "servises/Fetch";
 
 const Character = () => {
-    const { characterId } = useParams();
+    // const { characterId } = useParams();
+    // const characterId = "1";
     const location = useLocation();
     const backLinkHref = location.state?.from ?? "/";
-    console.log(characterId);
-    useEffect(() => {
-        getOneCharacterId(characterId)
-    }, [characterId])
+    // console.log(characterId);
+    // useEffect(() => {
+    //     getOneCharacterId(characterId)
+    // }, [characterId])
     
     return (
         <main>

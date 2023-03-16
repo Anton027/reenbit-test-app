@@ -1,14 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 // const BASE_URL = "https://rickandmortyapi.com/api"
 // const EPI_URL = "https://rickandmortyapi.com/api/episode"
-
+// axios.defaults.baseURL = "https://rickandmortyapi.com/api/";
 // "https://rickandmortyapi.com/api/episode"
 //  "https://rickandmortyapi.com/api/character"
 
 export async function getCharactersFetch(page) {
     try {
         const response = await axios.get("https://rickandmortyapi.com/api/character");
-        
         const episodes = await response.data.results
         return episodes;
     } catch (error) {
@@ -19,8 +18,8 @@ export async function getCharactersFetch(page) {
 
 export async function getOneCharacterId(id) {
     try {
-        const response = await axios.get(`https://rickandmortyapi.com/api/character`);
-        console.log(response);
+        const response = await axios.get(`https://rickandmortyapi.com/api/character/${id}`);
+        
         return response;
     } catch (error) {
         console.error(error);
