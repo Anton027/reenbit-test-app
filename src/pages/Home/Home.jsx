@@ -52,7 +52,7 @@ const Home = () => {
                         ({ id, name, species, image }) => 
                             
                             <ListItem key={id}>
-                                <Link to={`/character`} state={{ from: location }}>
+                                <Link to={`${id}`} state={{ from: location }}>
                                     <Image src={image} alt={name} />
                                     <DescriptionWrap>
                                         <Name>{name}</Name>

@@ -1,33 +1,55 @@
 import { BackLink } from "components/BackLink/Backlink";
-// import { useEffect } from "react";
-import { useLocation, } from "react-router-dom";
-// import { getOneCharacterId } from "servises/Fetch";
+import { useEffect, useState } from "react";
+import { useLocation,useParams } from "react-router-dom";
+// import { getCharactersFetch } from "servises/Fetch";
+import { getOneCharacterId } from "servises/Fetch";
 
 const Character = () => {
-    // const { characterId } = useParams();
+    const { id } = useParams();
+    const [character, setCharacter] = useState([])
     // const characterId = "1";
     const location = useLocation();
     const backLinkHref = location.state?.from ?? "/";
+
+    // const [episodes, setEpisodes] = useState([])
+    
+    useEffect(() => {
+        // getCharactersFetch().then(res => setEpisodes(res));
+        getOneCharacterId(id).then(res => setCharacter(res.data))
+    },[id])
+    
+    console.log(character);
+
+    
+    // const namesSort = [...episodes].sort((firstName, secondName) => firstName.name.localeCompare(secondName.name));
+    // console.log(namesSort);
+    // const getEpisodeById = (id) => {
+    //     return namesSort.find((el) => el.id === id);
+    // };
+    // const episode = getEpisodeById(id);
+    // console.log(episode);
     // console.log(characterId);
     // useEffect(() => {
     //     getOneCharacterId(characterId)
     // }, [characterId])
-    
+    const { male,gender,image,name} = character;
     return (
         <main>
-            <h2>Character Page</h2>
+            
             <BackLink to={backLinkHref}>
                 GO BACK
             </BackLink>
 
-            <div>
-                <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="name" />
-                <h4>Rick Sanchez</h4>
+            <div key={character.id}>
+                <img src={image} alt={name} />
+                <h4>{name }</h4>
                 <p>informations</p>
                 <ul>
                     <li>
-                        <p>Gender</p>
-                        <p>male</p>
+                        <p>{gender}</p>
+                        <p>{ male}</p>
+                        <p>{id}</p>
+
                     </li>
                 </ul>
             </div>

@@ -11,21 +11,28 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     gap: 32px;
+    justify-content: center;
+    align-items: center;
     padding-left: 24px;
     padding-right: 24px;
 `
 export const Image = styled.img`
-    @media screen and (max-width: 767px) {
-        max-width: 312px;
-    }
+    min-width: 312px;
+    /* @media screen and (max-width: 767px) {
+       
+    } */
 `
 export const Hero = styled.img`
     max-height: 104px;
     max-width: 312px;
 `
 export const ListItem = styled.div`
+    min-width: 312px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
     border-radius: 4px;
+    &:hover,:focus{
+        scale: 1.04;
+    }
 ` 
 export const DescriptionWrap = styled.div`
     display: flex;

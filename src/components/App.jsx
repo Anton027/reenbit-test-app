@@ -10,8 +10,8 @@ export const App = () => {
   return (
     <>
     <Routes>
-      <Route index path="/" element={<Home />}></Route>
-      <Route path="/character" element={<Character />}></Route>
+      <Route index path="/character" element={<Home />}></Route>
+      <Route path="/character/:id" element={<Character />}></Route>
       <Route path="*" element={<NotFound />}></Route>
     </Routes>
       <GlobalStyle />
