@@ -1,4 +1,5 @@
 import { BackLink } from "components/BackLink/Backlink";
+
 import { useEffect, useState } from "react";
 import { useLocation,useParams } from "react-router-dom";
 // import { getCharactersFetch } from "servises/Fetch";
@@ -46,45 +47,46 @@ const Character = () => {
 
     const { type,origin,name,gender,image,status,species} = character;
     return (
-        <main>
-            
-            <BackLink to={backLinkHref}>
-                GO BACK
-            </BackLink>
+
+            <main>
+                
 
             <Container key={character.id}>
-                <Wrap>
-                    <Image src={image} alt={name} />
-                    <Title>{name}</Title>
-                </Wrap>
-                
-                <ListTitle>
-                    Informations
-                </ListTitle>
-                <List>
-                    <ListItem>
-                        <Info>Gender</Info>
-                        <Descript>{gender}</Descript>
-                    </ListItem>
-                    <ListItem>
-                        <Info>Status</Info>
-                        <Descript>{status}</Descript>
-                    </ListItem>
-                    <ListItem>
-                        <Info>Species</Info>
-                        <Descript>{species}</Descript>
-                    </ListItem>
-                    <ListItem>
-                        <Info>Origin</Info>
-                        <Descript>{origin ? origin.name : "not"}</Descript>
-                    </ListItem>
-                    <ListItem>
-                        <Info>Type</Info>
-                        <Descript>{(type === '') ? "unknow" : type}</Descript>
-                    </ListItem>
-                </List>
-            </Container>
-        </main>
+                <BackLink to={backLinkHref}>
+                    GO BACK
+                </BackLink>
+                    <Wrap>
+                        <Image src={image} alt={name} />
+                        <Title>{name}</Title>
+                    </Wrap>
+                    
+                    <ListTitle>
+                        Informations
+                    </ListTitle>
+                    <List>
+                        <ListItem>
+                            <Info>Gender</Info>
+                            <Descript>{gender}</Descript>
+                        </ListItem>
+                        <ListItem>
+                            <Info>Status</Info>
+                            <Descript>{status}</Descript>
+                        </ListItem>
+                        <ListItem>
+                            <Info>Species</Info>
+                            <Descript>{species}</Descript>
+                        </ListItem>
+                        <ListItem>
+                            <Info>Origin</Info>
+                            <Descript>{origin ? origin.name : "not"}</Descript>
+                        </ListItem>
+                        <ListItem>
+                            <Info>Type</Info>
+                            <Descript>{(type === '') ? "unknow" : type}</Descript>
+                        </ListItem>
+                    </List>
+                </Container>
+                </main>
     )
 };
 export default Character;

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { getCharactersFetch } from "servises/Fetch";
 import { Link, useLocation } from "react-router-dom";
-import mobile from '../../assets/mobile.png'
+import mobile from '../../assets/mobile.png';
+import desctop from '../../assets/desctop.png'
 import { AiOutlineSearch } from "react-icons/ai";
 import {
     List,
@@ -13,8 +14,10 @@ import {
     ListItem,
     DescriptionWrap,
     LabelSearch,
-    InputSearch
+    InputSearch,
+    HeroDesctop
 } from "./Home.styled";
+
 
 
 
@@ -37,7 +40,11 @@ const Home = () => {
                     src={mobile}
                     alt="mobile"
                 />
-                
+                <HeroDesctop
+                    src={desctop}
+                    alt="desctop"
+                />
+
                 <LabelSearch >
                     <AiOutlineSearch size={22} />
                     <InputSearch
@@ -64,7 +71,8 @@ const Home = () => {
                     )}
                     </List>) : <h3>Not found</h3>}
                 </Container>
-        </main>
+            </main>
+
     )
 };
 export default Home; 
