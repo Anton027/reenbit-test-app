@@ -29,10 +29,7 @@ const Character = () => {
         // getCharactersFetch().then(res => setEpisodes(res));
         getOneCharacterId(id).then(res => setCharacter(res.data))
     },[id])
-    
-    console.log(character);
 
-    
     // const namesSort = [...episodes].sort((firstName, secondName) => firstName.name.localeCompare(secondName.name));
     // console.log(namesSort);
     // const getEpisodeById = (id) => {

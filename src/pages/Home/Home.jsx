@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { getCharactersFetch } from "servises/Fetch";
 import { Link, useLocation } from "react-router-dom";
 import mobile from '../../assets/mobile.png';
 import desctop from '../../assets/desctop.png'
-import { AiOutlineSearch } from "react-icons/ai";
 import {
     List,
     Container,
@@ -13,17 +13,16 @@ import {
     Hero,
     ListItem,
     DescriptionWrap,
-    LabelSearch,
-    InputSearch,
     HeroDesctop
 } from "./Home.styled";
+import SearchBox from "components/SearchBox/SearchBox";
 
 
 
 
 const Home = () => {
     const [episodes, setEpisodes] = useState([])
-    
+    const [searchParams, setSearchParams] = useSearchParams();
     const location = useLocation();
     useEffect(() => {
         getCharactersFetch().then(res => setEpisodes(res))
@@ -31,6 +30,18 @@ const Home = () => {
     
 
     const namesSort = [...episodes].sort((firstName, secondName) => firstName.name.localeCompare(secondName.name));
+    // console.log(namesSort)
+
+    const characterName = searchParams.get("name") ?? "";
+    const visibleEpisodes = namesSort.filter((episod) => 
+        episod.name.toLowerCase().includes(characterName.toLowerCase())
+    )
+    // console.log(characterName);
+    // console.log(visibleEpisodes);
+    const updateQueryString = (name) => {
+        const nextParams = name !== "" ? { name } : {};
+        setSearchParams(nextParams);
+    };
 
     return (
         
@@ -45,17 +56,10 @@ const Home = () => {
                     alt="desctop"
                 />
 
-                <LabelSearch >
-                    <AiOutlineSearch size={22} />
-                    <InputSearch
-                        placeholder="Filter by name..."
-                        type="text"
-                        name="filter"
-                    />
-                </LabelSearch>
+            <SearchBox value={characterName} onChange={updateQueryString}/>
             {episodes.length > 0 ?
                 (<List>
-                    {namesSort.map(
+                    {visibleEpisodes.map(
                         ({ id, name, species, image }) => 
                             
                             <ListItem key={id}>
