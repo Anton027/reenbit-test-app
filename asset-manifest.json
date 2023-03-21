@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/reenbit-test-app/static/css/main.0d5b2924.css",
-    "main.js": "/reenbit-test-app/static/js/main.ce86b5bc.js",
-    "static/js/754.66a4ae2c.chunk.js": "/reenbit-test-app/static/js/754.66a4ae2c.chunk.js",
+    "main.js": "/reenbit-test-app/static/js/main.a5b461ae.js",
+    "static/js/647.1ae4574a.chunk.js": "/reenbit-test-app/static/js/647.1ae4574a.chunk.js",
     "static/css/992.c539a64e.chunk.css": "/reenbit-test-app/static/css/992.c539a64e.chunk.css",
-    "static/js/992.0ee7c51c.chunk.js": "/reenbit-test-app/static/js/992.0ee7c51c.chunk.js",
+    "static/js/992.32c3b242.chunk.js": "/reenbit-test-app/static/js/992.32c3b242.chunk.js",
     "static/js/805.31e43fc0.chunk.js": "/reenbit-test-app/static/js/805.31e43fc0.chunk.js",
     "static/js/673.fe13f6a2.chunk.js": "/reenbit-test-app/static/js/673.fe13f6a2.chunk.js",
     "static/js/617.dc9d25e5.chunk.js": "/reenbit-test-app/static/js/617.dc9d25e5.chunk.js",
@@ -13,10 +13,10 @@
     "static/media/mobile.png": "/reenbit-test-app/static/media/mobile.f0a28677015be676ed49.png",
     "index.html": "/reenbit-test-app/index.html",
     "main.0d5b2924.css.map": "/reenbit-test-app/static/css/main.0d5b2924.css.map",
-    "main.ce86b5bc.js.map": "/reenbit-test-app/static/js/main.ce86b5bc.js.map",
-    "754.66a4ae2c.chunk.js.map": "/reenbit-test-app/static/js/754.66a4ae2c.chunk.js.map",
+    "main.a5b461ae.js.map": "/reenbit-test-app/static/js/main.a5b461ae.js.map",
+    "647.1ae4574a.chunk.js.map": "/reenbit-test-app/static/js/647.1ae4574a.chunk.js.map",
     "992.c539a64e.chunk.css.map": "/reenbit-test-app/static/css/992.c539a64e.chunk.css.map",
-    "992.0ee7c51c.chunk.js.map": "/reenbit-test-app/static/js/992.0ee7c51c.chunk.js.map",
+    "992.32c3b242.chunk.js.map": "/reenbit-test-app/static/js/992.32c3b242.chunk.js.map",
     "805.31e43fc0.chunk.js.map": "/reenbit-test-app/static/js/805.31e43fc0.chunk.js.map",
     "673.fe13f6a2.chunk.js.map": "/reenbit-test-app/static/js/673.fe13f6a2.chunk.js.map",
     "617.dc9d25e5.chunk.js.map": "/reenbit-test-app/static/js/617.dc9d25e5.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.0d5b2924.css",
-    "static/js/main.ce86b5bc.js"
+    "static/js/main.a5b461ae.js"
   ]
 }
