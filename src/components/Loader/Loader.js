@@ -1,11 +1,11 @@
 import BarLoader from "react-spinners/BarLoader";
+import { LoaderWrap } from "./Loader.styled";
 
 const Loader = () => {
     return (
-        <div
-        >
+        <LoaderWrap>
             <BarLoader color="#36d7b7" size={20}/>
-        </div>
+        </LoaderWrap>
     )
 }
 

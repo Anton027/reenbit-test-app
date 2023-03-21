@@ -1,7 +1,6 @@
 import { lazy,Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loader from "./Loader/Loader";
-// import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
 import { GlobalStyle } from "./GlobalStyle";
 
 const Home = lazy(() => import('../pages/Home/Home'));

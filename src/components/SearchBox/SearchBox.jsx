@@ -1,8 +1,7 @@
-import { InputSearch, LabelSearch } from "pages/Home/Home.styled";
+import { InputSearch, LabelSearch } from "./SearchBox.styled";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const SearchBox = ({ value, onChange }) => { 
-    
     return (
         <LabelSearch>
             <AiOutlineSearch size={22} />
