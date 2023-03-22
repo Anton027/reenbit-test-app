@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-// import useLocalStorage from "components/hooks/useLocalStorage";
+import useLocalStorage from "components/hooks/useLocalStorage";
 import {
     List,
     ListItem,
@@ -13,12 +13,11 @@ import {
 
 const ListCharacter = ({ characters }) => {
     const location = useLocation();
-    // const [storageCharacters ] = useLocalStorage("characters", characters);
-    
+    const [storageCharacters ] = useLocalStorage("characters", characters);
 
     return (
         <List>
-                    {characters.map(
+                    {storageCharacters.map(
                         ({ id, name, species, image }) => 
                             
                             <ListItem key={id}>

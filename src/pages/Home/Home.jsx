@@ -10,9 +10,6 @@ import {
 } from "./Home.styled";
 import SearchBox from "components/SearchBox/SearchBox";
 import ListCharacter from "components/ListCharacter/ListCharacter";
-// import useLocalStorage from "components/hooks/useLocalStorage";
-
-
 
 
 const Home = () => {
@@ -37,8 +34,7 @@ const Home = () => {
         const nextParams = name !== "" ? { name } : {};
         setSearchParams(nextParams);
     };
-    // console.log(visibleEpisodes);
-    // const [storageVisibleEpisodes] = useLocalStorage("visibleEpisodes",visibleEpisodes);
+
     return (
         
         <main>
